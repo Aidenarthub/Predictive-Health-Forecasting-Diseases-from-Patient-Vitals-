@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Predictive Health | Homepage</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/carousel/">
+
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+
+        .carousel-inner {
+            background-color: green;
+        }
+        .carousel-caption {
+            color: #000000; /* Set text color to black */
+        }
+
+        body {
+            background-color: #ffd0d7;
+        }
+
+        .welcome {
+            background-image: none;
+            background-size: cover;
+            background-color: transparent;
+            padding: 6rem 0;
+        }
+
+        .welcome hr {
+            border-top: 1px solid #b4b4b4;
+            width: 95%;
+            margin-top: 0.3rem;
+            margin-bottom: 1rem;
+        }
+
+        /* ... Add any other existing styles here ... */
+    </style>
+
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='index.css') }}">
+</head>
+
+<body>
+    <form id="form1">
+        <header>
+            <!-- Navigation Bar -->
+            <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+                <a class="navbar-brand" href="#"><b>Predictive Health</b></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="/home">Home</a>
+                        </li>
+                        <!-- Add the dropdown button -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Laboratory
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="/diabetes">Diabetes</a>
+                                <a class="dropdown-item" href="/cancer">Breast Cancer</a>
+                                <a class="dropdown-item" href="/liver">Liver Disease</a>
+                                <!-- Add more dropdown items as needed -->
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/disindex">Disease Index</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/about">About Us</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/help">Help</a>
+                                </li>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Slider -->
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="container">
+                        <div class="carousel-caption text-left">
+                            <h1>Welcome to Predictive Health</h1>
+                            <p>A Simple and Easy-to-Use Predictive Health Tool for Medical Institutions.</p>
+                            <p><a class="btn btn-lg btn-primary" href="/help" role="button">Learn More</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <h1>Efficient and Reliable Tool</h1>
+                            <p>Generate Risk Assessments Swiftly and Efficiently.</p>
+                            <p><a class="btn btn-lg btn-primary" href="/about" role="button">About Us</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="container">
+                        <div class="carousel-caption text-right">
+                            <h1>Simple and Non-Complex Process</h1>
+                            <p>Developed with a Clean and Elegant User Interface.</p>
+                            <p><a class="btn btn-lg btn-primary" href="/about" role="button">About Us</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                <span class="
+
+        <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+    <!-- Welcome Section -->
+  <section class="welcome">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center">
+                <h2>Welcome to Predictive Health</h2>
+                <p class="lead">Our system helps medical institutions assess risks effectively. If you need assistance or have concerns about the risk assessment process, please visit our help or about us pages.</p>
+                <hr>
+                <a href="/about" class="btn btn-primary btn-lg">Learn More</a>
+            </div>
+        </div>
+    </div>
+    <style>
+        .welcome {
+            background-image: url('static/img/yellow medico.jpg');
+            background-size: cover;
+            background-color: transparent;
+        }
+    </style>
+</section>
+
+
+
+    <!-- Additional Sections -->
+    <!-- Add more sections with relevant information about your services, features, testimonials, etc. -->
+
+    <!-- Footer -->
+    <footer>
+        <div class="container-fluid padding">
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <hr class="light">
+                    <h5>Contact Details</h5>
+                    <hr class="light">
+                    <p>+91 8978225293</p>
+                    <p>contactus@PredictiveHealth.com</p>
+                    <p>1901/B, Sangareddy</p>
+                    <p>Sangareddy, Telangana, 502294</p>
+                </div>
+                <div class="col-md-4">
+                    <hr class="light">
+                    <h5>Our Hours</h5>
+                    <hr class="light">
+                    <p>Monday: 9am-10pm</p>
+                    <p>Saturday: 10am-8pm</p>
+                    <p>Sunday: Closed</p>
+                </div>
+                <div class="col-md-4">
+                    <hr class="light">
+                    <h5>Social Media</h5>
+                    <hr class="light">
+                    <a href="#"><i class="fab fa-facebook-square"></i></a>
+                    <a href="#"><i class="fab fa-twitter-square"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube-square"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</form>
+</body>
+</html>
+<body style="background-image: url('static/img/yellow medico.jpg'); background-size: cover;">
+<div id="myCarousel" class="carousel slide" data-ride="carousel" style="background-color: transparent;">
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- ... Your existing head content ... -->
+
+    <style>
+        .bd-placeholder-img {
+            /* ... Your existing styles ... */
+        }
+
+        /* ... Your existing styles ... */
+
+        .carousel-inner {
+            background-color: transparent; /* Update the background color to transparent */
+        }
+
+
+
+        .welcome {
+            /* ... Your existing styles ... */
+        }
+    </style>
+</head>
+<body>
+    <!-- ... Your existing body content ... -->
+</body>
+</html>
